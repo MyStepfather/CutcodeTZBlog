@@ -15,7 +15,7 @@
         @vite('resources/js/app.js')
 
     </head>
-    <body class="antialiased bg-violet-800 flex justify-center flex-col">
+    <body class="antialiased">
     <header class="header pt-6 xl:pt-12">
         <div class="container">
             <div class="header-inner flex items-center justify-between lg:justify-start">
@@ -23,7 +23,7 @@
                     <a href="index.html" rel="home">
                         <img alt="CutCode"
                              class="w-[148px] md:w-[201px] h-[36px] md:h-[50px] inline-block"
-                             src="images/nav/logo.svg"
+                             src="{{ Vite::asset('resources/images/nav/logo.svg') }}"
                         >
                     </a>
                 </div><!-- /.header-logo -->
@@ -66,7 +66,7 @@
                 <div class="tasks-card flex flex-col rounded-3xl md:rounded-[40px] bg-card">
                     <div class="tasks-card-photo overflow-hidden h-40 xs:h-48 sm:h-[280px] rounded-3xl md:rounded-[40px]">
                         <a href="article.html">
-                            <img src="./../images/article_demo.jpg"
+                            <img src="{{ Vite::asset('resources/images/article_demo.jpg') }}"
                                  class="object-cover w-full h-full"
                                  alt="">
                         </a>
@@ -92,7 +92,7 @@
                 <div class="tasks-card flex flex-col rounded-3xl md:rounded-[40px] bg-card">
                     <div class="tasks-card-photo overflow-hidden h-40 xs:h-48 sm:h-[280px] rounded-3xl md:rounded-[40px]">
                         <a href="article.html">
-                            <img src="./../images/article_demo.jpg"
+                            <img src="{{ Vite::asset('resources/images/article_demo.jpg') }}"
                                  class="object-cover w-full h-full"
                                  alt="">
                         </a>
@@ -118,7 +118,7 @@
                 <div class="tasks-card flex flex-col rounded-3xl md:rounded-[40px] bg-card">
                     <div class="tasks-card-photo overflow-hidden h-40 xs:h-48 sm:h-[280px] rounded-3xl md:rounded-[40px]">
                         <a href="article.html">
-                            <img src="./../images/article_demo.jpg"
+                            <img src="{{ Vite::asset('resources/images/article_demo.jpg') }}"
                                  class="object-cover w-full h-full"
                                  alt="">
                         </a>
@@ -144,7 +144,7 @@
                 <div class="tasks-card flex flex-col rounded-3xl md:rounded-[40px] bg-card">
                     <div class="tasks-card-photo overflow-hidden h-40 xs:h-48 sm:h-[280px] rounded-3xl md:rounded-[40px]">
                         <a href="article.html">
-                            <img src="./../images/article_demo.jpg"
+                            <img src="{{ Vite::asset('resources/images/article_demo.jpg') }}"
                                  class="object-cover w-full h-full"
                                  alt="">
                         </a>
@@ -177,7 +177,7 @@
                     <a href="index.html" rel="home">
                         <img alt="CutCode"
                              class="w-[148px] md:w-[201px] h-[36px] md:h-[50px] inline-block"
-                             src="images/nav/logo.svg"
+                             src="{{ Vite::asset('resources/images/nav/logo.svg') }}"
                         >
                     </a>
                 </div><!-- /.footer-logo -->
@@ -193,12 +193,12 @@
                         <a class="inline-flex items-center text-white hover:text-pink"
                            href="#" rel="nofollow noopener"
                            target="_blank">
-                            <img alt="YouTube" class="h-5 lg:h-6" src="images/icons/youtube.svg">
+                            <img alt="YouTube" class="h-5 lg:h-6" src="{{ Vite::asset('resources/images/icons/youtube.svg') }}">
                             <span class="ml-2 lg:ml-3 text-xxs font-semibold">YouTube</span>
                         </a>
                         <a href="#" class="inline-flex items-center text-white hover:text-pink"
                            rel="nofollow noopener" target="_blank">
-                            <img alt="Telegram" class="h-5 lg:h-6" src="images/icons/telegram.svg">
+                            <img alt="Telegram" class="h-5 lg:h-6" src="{{ Vite::asset('resources/images/icons/telegram.svg') }}">
                             <span class="ml-2 lg:ml-3 text-xxs font-semibold">Telegram</span>
                         </a>
                     </div>
